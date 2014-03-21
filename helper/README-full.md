@@ -1,3 +1,7 @@
+# {{{%= name %}}} [![NPM version](https://badge.fury.io/js/{%= name %}.png)](http://badge.fury.io/js/{%= name %})
+
+> {%= name %} handlebars helper, for doing foo, bar and baz.
+
 ## Installation
 
 Use [npm](npmjs.org) to install the package: `npm i {%= name %}`.
@@ -34,10 +38,42 @@ grunt.initConfig({
 });
 ```
 
-With that completed, you may now use the `{{{%= shortname %}}}` helper in your templates:
+With that completed, you may now use the `{{{%= shortname(name) %}}}` helper in your templates:
 
 ```handlebars
-{{{%= shortname %} 'foo'}}
+{{{%= shortname(name) %} 'foo'}}
 ```
 
 Please [report any bugs or feature requests](https://github.com/helpers/{%= name %}/issues/new), thanks!
+
+
+## Options
+### task options
+Options can be set in your Gruntfile, in the `{%= name %}` object in the Assemble task or target options:
+
+```javascript
+grunt.initConfig({
+  assemble: {
+    options: {
+      {%= shortname(name) %}: {
+        foo: true
+      }
+    }
+    ...
+  }
+});
+```
+
+## Related projects
+{%= include("related-repos-list") %}
+
+## Author
+{%= contrib("authors") %}
+
+## License
+{%= copyright() %}
+{%= license() %}
+
+***
+
+{%= include("footer") %}

@@ -1,7 +1,9 @@
 With the helper registered, you may now begin using it in your templates.
 
+Example:
+
 ```html
-{{{%= shortname %} 5}}
+{{{%= shortname(name) %} 5}}
 ```
 
 Renders to:

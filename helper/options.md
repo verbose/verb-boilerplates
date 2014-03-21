@@ -4,7 +4,7 @@
 Type: `String` (optional)
 Default value: `undefined`
 
-The current working directory, or "cwd", for paths defined in the helper. So instead of writing out `{{{%= shortname %} 'my/book/chapters/*.hbs'}}`, just define `cwd: "my/book"` and now any paths defined in the helper will use the `cwd` as a base, like this: `{{{%= shortname %} 'chapters/*.hbs'}}`
+The current working directory, or "cwd", for paths defined in the helper. So instead of writing out `{{{%= shortname(name) %} 'my/book/chapters/*.hbs'}}`, just define `cwd: "my/book"` and now any paths defined in the helper will use the `cwd` as a base, like this: `{{{%= shortname(name) %} 'chapters/*.hbs'}}`
 
 ### sep
 Type: `String`
@@ -16,7 +16,7 @@ The separator to append after each inlined file.
 Type: `Function`
 Default value: `compareFn`
 
-Compare function for sorting the {%= shortname %} files.
+Compare function for sorting the {%= shortname(name) %} files.
 
 
 
@@ -28,10 +28,10 @@ Set options as hash arguments directly on the helper expressions themselves:
 
 ```handlebars
 // Append a separator to the content of each included file
-{{{%= shortname %} 'my/book/chapters/*.hbs' sep="<!-- Chapter -->"}}
+{{{%= shortname(name) %} 'my/book/chapters/*.hbs' sep="<!-- Chapter -->"}}
 
 // Override the cwd defined in the task options
-{{{%= shortname %} 'my/book/chapters/*.hbs' cwd="./"}}
+{{{%= shortname(name) %} 'my/book/chapters/*.hbs' cwd="./"}}
 ```
 Note that **Options defined in the hash always win**!
 
@@ -39,13 +39,13 @@ Note that **Options defined in the hash always win**!
 ### "assemble" task options
 > If you use Grunt and [Assemble](http://assemble.io), you can pass options from the `assemble` task in the Gruntfile to the helper.
 
-This helper registers a [custom `{%= shortname %}` property](http://assemble.io/docs/Custom-Helpers.html), in the Assemble options, which enables options for the helper to be defined in the Assemble task or target options, e.g.:
+This helper registers a [custom `{%= shortname(name) %}` property](http://assemble.io/docs/Custom-Helpers.html), in the Assemble options, which enables options for the helper to be defined in the Assemble task or target options, e.g.:
 
 ```js
 assemble: {
   options: {
-    {%= shortname %}: {
-      // {%= shortname %} helper options here
+    {%= shortname(name) %}: {
+      // {%= shortname(name) %} helper options here
     }
   }
 }
@@ -59,7 +59,7 @@ This option is really useful if you expect to have lots of options defined, or d
 ```js
 assemble: {
   options: {
-    data: ['path/to/{%= shortname %}.json']
+    data: ['path/to/{%= shortname(name) %}.json']
   }
 }
 ```
@@ -87,7 +87,7 @@ Then inside `foo.json` we might define something like:
 Then use in templates like this:
 
 ```handlebars
-{{{%= shortname %} foo.docs}}
-{{{%= shortname %} foo.chapters}}
-{{{%= shortname %} foo.posts}}
+{{{%= shortname(name) %} foo.docs}}
+{{{%= shortname(name) %} foo.chapters}}
+{{{%= shortname(name) %} foo.posts}}
 ```

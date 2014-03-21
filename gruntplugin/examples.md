@@ -3,7 +3,7 @@ In this example, the default options are used to do something with whatever. So 
 
 ```js
 grunt.initConfig({
-  {%= shortname %}: {
+  {%= shortname(name) %}: {
     options: {},
     files: {
       'dest/default_options': ['src/testing', 'src/123']
@@ -17,7 +17,7 @@ In this example, custom options are used to do something else with whatever else
 
 ```js
 grunt.initConfig({
-  {%= shortname %}: {
+  {%= shortname(name) %}: {
     options: {
       separator: ': ',
       punctuation: ' !!!',

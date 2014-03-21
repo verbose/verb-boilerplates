@@ -7,7 +7,7 @@ npm i {%= name %} --save
 Use within your application with the following line of JavaScript:
 
 ```js
-var {%= safename %} = require('{%= name %}');
+var {%= safename(name) %} = require('{%= name %}');
 ```
 
 

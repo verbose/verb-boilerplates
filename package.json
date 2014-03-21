@@ -1,8 +1,8 @@
 {
-  "name": "readme-boilerplates",
-  "description": "README boilerplates, for Phaser.",
-  "version": "0.1.2",
-  "homepage": "https://github.com/assemble/readme-boilerplates",
+  "name": "verb-boilerplates",
+  "description": "Docs boilerplates for Verb, the markdown documentation generator that requires zero-configuration.",
+  "version": "0.0.1",
+  "homepage": "https://github.com/assemble/verb-boilerplates",
   "author": {
     "name": "Jon Schlinkert",
     "url": "https://github.com/jonschlinkert"
@@ -10,25 +10,39 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/assemble/readme-boilerplates/blob/master/LICENSE-MIT"
+      "url": "https://github.com/assemble/verb-boilerplates/blob/master/LICENSE-MIT"
     }
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/assemble/readme-boilerplates.git"
+    "url": "https://github.com/assemble/verb-boilerplates.git"
   },
   "bugs": {
-    "url": "https://github.com/assemble/readme-boilerplates/issues"
+    "url": "https://github.com/assemble/verb-boilerplates/issues"
   },
   "main": "index.js",
   "dependencies": {
     "globule": "~0.2.0"
   },
   "keywords": [
-    "readme",
-    "phaser templates",
+    "boilerplate",
     "boilerplates",
+    "build",
+    "docs",
+    "documentation",
     "generate",
-    "template"
+    "generator",
+    "github docs",
+    "github documentation",
+    "markdown",
+    "marked",
+    "md",
+    "project documentation",
+    "readme",
+    "repo documentation",
+    "template",
+    "templates",
+    "verb templates",
+    "verb"
   ]
 }

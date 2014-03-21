@@ -1,4 +1,4 @@
-# {{{%= shortname %}}} [![NPM version](https://badge.fury.io/js/{%= name %}.png)](http://badge.fury.io/js/{%= name %})
+# {%= name %} {%=  badge("fury") %}
 
 > {%= description %}
 
@@ -12,17 +12,17 @@
 {%= docs("examples") %}
 
 ## Contributing
-{%= contrib("authors") %}
+{%= contrib("contributing") %}
 
 ## Related projects
 {%= include("related-repos-list") %}
 
-## Author
+## Authors
 {%= contrib("authors") %}
 
 ## License
-{%= copyright %}
-{%= license %}
+{%= copyright() %}
+{%= license() %}
 
 ***
 

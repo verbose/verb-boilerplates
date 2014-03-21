@@ -1,7 +1,7 @@
 In the command line, run:
 
 ```bash
-npm install assemble-contrib-{%= shortname %} --save
+npm install assemble-contrib-{%= shortname(name) %} --save
 ```
 
 Next, register the plugin with Assemble in your project's Gruntfile:
@@ -9,7 +9,7 @@ Next, register the plugin with Assemble in your project's Gruntfile:
 ```js
 assemble: {
   options: {
-    plugin: ['assemble-contrib-{%= shortname %}', 'other/plugins/*.js']
+    plugin: ['assemble-contrib-{%= shortname(name) %}', 'foo/*.js']
   }
 }
 ```
@@ -22,7 +22,7 @@ You can also use the plugin with specific targets:
 assemble: {
   foo: {
     options: {
-      plugin: ['assemble-contrib-{%= shortname %}']
+      plugin: ['assemble-contrib-{%= shortname(name) %}']
     },
     files: {'dist/': 'content/*.md'}
   },

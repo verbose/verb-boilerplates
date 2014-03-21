@@ -1,8 +1,8 @@
-In your project's Gruntfile, add a section named `{%= shortname %}` to the data object passed into `grunt.initConfig()`.
+In your project's Gruntfile, add a section named `{%= shortname(name) %}` to the data object passed into `grunt.initConfig()`.
 
 ```js
 grunt.initConfig({
-  {%= shortname %}: {
+  {%= shortname(name) %}: {
     options: {
       // Task-specific options go here.
     },

@@ -1,4 +1,4 @@
-# {%= name %} {%= _.badge("fury") %}
+# {%= name %} {%=  badge("fury") %}
 
 > {%= description %}
 
@@ -14,15 +14,15 @@
 ## Contributing
 {%= contrib("contributing") %}
 
-## Assemble plugins
-{%= include("related-repos-list") %}
+## Related projects
+{%= contrib("related-repos-list") %}
 
 ## Authors
 {%= contrib("authors") %}
 
 ## License
-{%= copyright %}
-{%= license %}
+{%= copyright() %}
+{%= license() %}
 
 ***
 
