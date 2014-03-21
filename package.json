@@ -1,6 +1,6 @@
 {
   "name": "verb-boilerplates",
-  "description": "Docs boilerplates for Verb, the markdown documentation generator that requires zero-configuration.",
+  "description": "Boilerplates for Verb. Each boilerplate consists of a few markdown templates to kickstart documentation for new projects.",
   "version": "0.0.1",
   "homepage": "https://github.com/assemble/verb-boilerplates",
   "author": {
