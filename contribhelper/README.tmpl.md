@@ -15,7 +15,10 @@
 {%= docs("examples") %}
 
 ## Contributing
-{%= include("contributing") %}
+{%= contrib("contributing") %}
+
+## Related projects
+{%= include("related-repos-list") %}
 
 ## Author
 {%= contrib("authors") %}

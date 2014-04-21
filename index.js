@@ -1,5 +1,4 @@
 var path = require('path');
-var glob = require('globule');
 
 // Specify the directory to search
 module.exports = function() {

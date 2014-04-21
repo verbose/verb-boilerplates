@@ -14,9 +14,6 @@
 ## Contributing
 {%= contrib("contributing") %}
 
-## Related projects
-{%= include("related-repos-list") %}
-
 ## Authors
 {%= contrib("authors") %}
 

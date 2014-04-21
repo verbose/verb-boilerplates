@@ -1,9 +1,3 @@
-## Installation
-
-Use [npm](npmjs.org) to install the package: `npm i {%= name %}`.
-
-## Register the helper
-
 The easiest way to register the helper with [Assemble](https://github.com/assemble/assemble) is to add the module to `devDependencies` and `keywords` in your project's package.json:
 
 ```json

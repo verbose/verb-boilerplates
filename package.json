@@ -1,7 +1,7 @@
 {
   "name": "verb-boilerplates",
   "description": "Boilerplates for Verb. Each boilerplate consists of a few markdown templates to kickstart documentation for new projects.",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "homepage": "https://github.com/assemble/verb-boilerplates",
   "author": {
     "name": "Jon Schlinkert",
@@ -32,17 +32,15 @@
     "documentation",
     "generate",
     "generator",
-    "github docs",
-    "github documentation",
+    "github",
     "markdown",
     "marked",
     "md",
-    "project documentation",
+    "project",
     "readme",
-    "repo documentation",
+    "repo",
     "template",
     "templates",
-    "verb templates",
     "verb"
   ]
 }

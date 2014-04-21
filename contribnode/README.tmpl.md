@@ -17,6 +17,9 @@
 ## Author
 {%= contrib("authors") %}
 
+## Related
+{%= include("relate-repos-list") %}
+
 ## License
 {%= copyright() %}
 {%= license() %}
